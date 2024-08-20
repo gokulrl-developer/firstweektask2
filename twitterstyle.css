@@ -1,0 +1,751 @@
+body{
+    margin:0;
+    height:100%;
+}
+html{
+    height:100%
+}
+/*invisible outer containers*/
+.outercontainer{
+    height:fit-content;
+    width:100%;
+    display:flex;
+    align-items:stretch
+
+}
+.leftcontainer{
+    width:23.5%;
+
+}
+.maincontainer{
+    min-height:189vh;    
+    width:43%;
+}
+.rightcontainer{
+    min-height:189vh;
+    width:33.5%;
+}
+/*leftnavbar*/
+.leftnavbar{
+    height:100vh;
+    width:100%;
+    background:black;
+    border:1px solid white;
+    position:sticky;
+    top:0;
+    box-sizing: border-box;
+}
+.logo{
+    height:50px;
+    width:50px;
+    border-radius:25px;
+    border:none;
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.home{
+    height:50px;
+    width:150px;
+    border-radius:25px;
+    border:none;
+    background:black;
+    display:flex;
+    align-items: center;
+    margin-top:5px;
+}
+.navicon{
+    margin-left:5px
+}
+.navtext{
+margin-left:20px;
+font-size:20px;
+color:white;
+font-weight:200
+}
+.explore{
+    height:50px;
+    width:175px;
+    border-radius:25px;
+    border:none;
+    background:black;
+    display:flex;
+    align-items: center;
+}
+.notifications{
+    height:50px;
+    width:200px;
+    border-radius:25px;
+    border:none;
+    background:black;
+    display:flex;
+    align-items: center;
+}
+.messages{
+    height:50px;
+    width:180px;
+    border-radius:25px;
+    border:none;
+    background:black;
+    display:flex;
+    align-items: center;
+}
+.grok{
+    height:50px;
+    width:100px;
+    border-radius:25px;
+    border:none;
+    background:black;
+    display:flex;
+    align-items: center;
+}
+.communities{
+    height:50px;
+    width:200px;
+    border-radius:25px;
+    border:none;
+    background:black;
+    display:flex;
+    align-items: center;
+}
+.profile{
+    height:50px;
+    width:150px;
+    border-radius:25px;
+    border:none;
+    background:black;
+    display:flex;
+    align-items: center;
+}
+.more{
+    height:50px;
+    width:100px;
+    border-radius:25px;
+    border:none;
+    background:black;
+    display:flex;
+    align-items: center;
+}
+.topost{
+    height:55px;
+    width:225px;
+    border-radius:27.5px;
+    border:none;
+    background:rgb(2, 177, 247);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    margin-top:7px;
+    text-decoration:none;
+}
+.accounts{
+    height:65px;
+    width:250px;
+    border-radius:32.5px;
+    border:none;
+    background:black;
+    margin-top:20px;
+    display:flex;
+    align-items: center;
+
+}
+.leftnavbarlist{
+    list-style-type: none;
+    
+}
+.logo:hover,.home:hover,.explore:hover,.notifications:hover,.messages:hover,.grok:hover,.communities:hover,.profile:hover,.more:hover,.accounts:hover,.foryou:hover,.following:hover{
+    background:rgba(255, 255, 255, 0.13);
+}
+.accounttext{
+  margin-left:10px 
+
+}
+.nameofuser{
+ color:white;
+font-size: 15px;  
+ font-weight:700
+}
+.userid{
+ color:white;
+font-size: 15px;
+font-weight:lighter
+}
+.accountmoreicon{
+    margin-left:100px;
+}
+/* middle portion*/
+.midnavbar{
+    width:100%;
+    height:9vh;
+    background:black;
+    position:sticky;
+    top:0;
+    display:flex;
+    box-sizing:border-box;
+    border-bottom:1px solid white;
+    
+}
+.foryou{
+    width:50%;
+    height:9vh;
+    background:black;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    font-family:sans-serif;
+    font-weight:600;
+    font-size:15px;
+    border-bottom:1px solid white;
+}
+.following{
+    width:50%;
+    height:9vh;
+    background:black;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    font-family:sans-serif;
+    font-weight:600;
+    font-size:15px;
+    border-bottom:1px solid white;
+} 
+/*scrollable portion*/
+.main{
+    height:fit-content;
+    min-height:180vh;
+    width:100%;
+    background:black;
+}
+.mainrespondarea{
+    height:120px;
+    width:100%;
+    background:black;
+    border-bottom:1px white solid; 
+}
+.mainreplyarea{
+    width:100%;
+    height:60px;
+    display:flex
+}
+.mainreply{
+   width:80%;
+   height:45px;
+   outline:none;
+   background:black;
+   color:white;
+   font-size:20px;
+   border:none;
+   margin-top:15px;
+   margin-left:10px;
+}
+.profilepicture{
+    height:45px;
+    width: 45px;
+    border-radius:22.5px;
+    margin:10px 0 0 10px;
+    overflow:hidden;
+    background:white;
+    border:none;
+}
+.profilepictureicon{
+    margin-top:25px
+}
+.maintoolbaricons{
+    height:40px;
+    width:100%;
+    display:flex;
+    align-items:flex-end
+}
+.maintoolbaricon{
+  height:30px;
+  width:30px;
+  border-radius:15px;
+  border:none;
+  margin-bottom:-10px;
+  background:black;
+}
+.midtopicons{
+font-size:15px;
+color:blue
+}
+.mediabtn{
+    margin-left:55px
+}
+.locationicon{
+    margin:0 0 -3px 5px;
+}
+.smallpostbtn{
+    height:35px;
+    width:60px;
+    border-radius:17.5px;
+    border:none;
+    background:rgb(2, 177, 247);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    margin-top:7px;
+    margin-bottom:-12px;
+    margin-left:270px
+}
+/*post*/
+.postcontainer{
+    width:100%;
+    height:fit-content;
+    background: black;
+    position:relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.548);
+}
+.postuserid{
+    position:relative;
+    top:-50px;
+    left:60px;
+    color:white;
+    font-family:sans-serif
+}
+.nameinpost{
+    color:white;
+   font-size: 15px;  
+    font-weight:600;
+}
+.postuserid{
+    color:white;
+   font-size: 15px;
+   font-weight:1px
+}
+.postedtime{
+    color:white;
+   font-size: 15px;
+   font-weight:lighter
+}
+.postdescriptionbox{
+    width:85%;
+    height:50px;
+    background:black;
+    margin-left:10%;
+    margin-top:-62px;
+    position:relative;
+    color:white;
+    font-size:20px;
+}
+.optionsforpostedchannelbtn{
+    height:35px;
+    width:35px;
+    border-radius:50%;
+    border:none;
+    position:absolute;
+    top:0;
+    right:0;
+    background:black;
+}
+.optionsforpostedchannelicon{
+    color:rgba(255, 255, 255, 0.473);
+}
+.optionsforpostedchannelbtn:hover{
+    background:rgba(0, 255, 255, 0.322);
+    color:rgba(0, 255, 255, 0.911);
+}
+.postvisualbox{
+    width:85%;
+    height:fit-content;
+    background:black;
+    margin-left:10%;
+    margin-top:10px;
+    border-radius:20px;
+    border:1px solid rgba(255, 255, 255, 0.568);
+}
+.postbtnbox{
+    width:85%;
+    height:45px;
+    background:black;
+    margin-left:10%;
+    display:flex;
+    align-items:center;
+}
+.replybtncircle{
+    height:35px;
+    width:35px;
+    border-radius: 50%;
+    display:inline-block;
+    position:relative;
+    box-sizing: border-box;
+}  
+.replybtniconbox{
+    height:20px;
+    width:53px;
+    position:absolute;
+    top:7px;
+    left:7px;
+    overflow:visible;
+    display:inline-block;
+    box-sizing: border-box;
+    color:rgba(255, 255, 255, 0.452);
+    font-weight:lighter;
+}
+.replybtniconbox2{
+    height:20px;
+    width:20px;
+    box-sizing: border-box;
+}
+.replybtniconbox>p{
+  margin:-20px 0 0 10px;
+}
+.replybtn{
+    border:none;
+    background-color: transparent;
+    box-sizing: border-box;
+    display:inline-block;
+}
+.replybtncircle:hover div{
+  color:aqua;
+}
+.replybtncontainer:hover>div{
+    background:rgba(0, 255, 255, 0.26)
+}
+.repostbtncircle{
+    height:35px;
+    width:35px;
+    border-radius: 50%;
+    display:inline-block;
+    position:relative;
+    box-sizing: border-box;
+}  
+.repostbtniconbox{
+    height:20px;
+    width:53px;
+    position:absolute;
+    top:7px;
+    left:7px;
+    overflow:visible;
+    display:inline-block;
+    box-sizing: border-box;
+    color:rgba(255, 255, 255, 0.452);
+    font-weight:lighter;
+}
+.repostbtniconbox2{
+    height:20px;
+    width:20px;
+    box-sizing: border-box;
+}
+.repostbtniconbox>p{
+  margin:-20px 0 0 10px;
+}
+.repostbtn{
+    border:none;
+    background-color: transparent;
+    box-sizing: border-box;
+    display:inline-block;
+    margin-left:55px;
+}
+.repostbtncircle:hover div{
+  color:rgb(2, 194, 120);
+}
+.repostbtncontainer:hover>div{
+    background:rgba(2, 194, 120, 0.247);
+}
+.likebtncircle{
+    height:35px;
+    width:35px;
+    border-radius: 50%;
+    display:inline-block;
+    position:relative;
+    box-sizing: border-box;
+}  
+.likebtniconbox{
+    height:20px;
+    width:53px;
+    position:absolute;
+    top:7px;
+    left:7px;
+    overflow:visible;
+    display:inline-block;
+    box-sizing: border-box;
+    color:rgba(255, 255, 255, 0.452);
+    font-weight:lighter;
+}
+.likebtniconbox2{
+    height:20px;
+    width:20px;
+    box-sizing: border-box;
+}
+.likebtniconbox>p{
+  margin:-20px 0 0 10px;
+}
+.likebtn{
+    border:none;
+    background-color: transparent;
+    box-sizing: border-box;
+    display:inline-block;
+    margin-left:55px;
+}
+.likebtncircle:hover div{
+  color:rgb(255, 0, 85);
+}
+.likebtncontainer:hover>div{
+    background:rgba(255, 0, 85, 0.192);
+}
+.viewbtncircle{
+    height:35px;
+    width:35px;
+    border-radius: 50%;
+    display:inline-block;
+    position:relative;
+    box-sizing: border-box;
+}  
+.viewbtniconbox{
+    height:20px;
+    width:53px;
+    position:absolute;
+    top:7px;
+    left:7px;
+    overflow:visible;
+    display:inline-block;
+    box-sizing: border-box;
+    color:rgba(255, 255, 255, 0.452);
+    font-weight:lighter;
+}
+.viewbtniconbox2{
+    height:20px;
+    width:20px;
+    box-sizing: border-box;
+}
+.viewbtniconbox>p{
+  margin:-20px 0 0 10px;
+}
+.viewbtn{
+    border:none;
+    background-color: transparent;
+    box-sizing: border-box;
+    display:inline-block;
+    margin-left:55px;
+}
+.viewbtncircle:hover div{
+   color:aqua
+}
+.viewbtncontainer:hover>div{
+    background:rgba(0, 255, 255, 0.281)
+}
+.bookmarkbtn{
+    height:35px;
+    width:35px;
+    border-radius:50%;
+    border:none;
+    margin-left:55px;
+    background:black;
+    color:rgba(255, 255, 255, 0.452);
+}
+.sharebtn{
+    height:35px;
+    width:35px;
+    border-radius:50%;
+    border:none;
+    background:black;
+    color:rgba(255, 255, 255, 0.452);
+}
+.sharebtn:hover{
+    color:aqua;
+    background:rgba(0, 255, 255, 0.233)
+}
+.bookmarkbtn:hover{
+    color:aqua;
+    background:rgba(0, 255, 255, 0.233)
+}
+/*right topbar*/ 
+.righttopbar{
+    width:100%;
+    height:9vh;
+    background:black;
+    border-left:1px white solid;
+    position:sticky;
+    top:0;
+    padding:5px 0 0 40px;
+    box-sizing:border-box
+}
+.rightsearchbar{
+    height:6.5vh;
+    width:350px;
+    border-radius:3.25vh;
+}
+/*right sidebar*/   
+.rightsidebar{
+    height:180vh;
+    width:100%;
+    background:black;
+    position:sticky;
+    top:-50vh;
+    margin-top: 0;
+    display:flex;
+    flex-direction:column;
+    padding:0 0 0 40px;
+    box-sizing:border-box;
+    border-left:1px solid white;
+}
+pre{
+    color:white
+} 
+/*for premium*/
+.subscription{
+    width:350px;
+    height:160px;
+   border:1px white solid;
+   box-sizing: border-box;
+   margin-top:16px;
+   border-radius:15px;
+    
+}
+.headinginfo{
+    font-size: 20px;   
+     font-weight:700;
+     font-family: sans-serif;
+     color:white;
+     margin-left:15px;
+}
+.info{
+    margin-top:-13px;
+    font-size: 15px;
+    font-weight:lighter;
+    font-family: sans-serif;
+    color:white;
+    margin-left:15px;
+}
+.subscriptionbtn{
+        height:40px;
+        width:120px;
+        border-radius:20px;
+        border:none;
+        background:rgb(2, 177, 247);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        margin-top:10px;
+        margin-left:15px;
+}
+/*trending items*/
+.trending{
+    width:350px;
+    height:500px;
+   border:1px white solid;
+   box-sizing: border-box;
+   margin-top:16px;
+   border-radius:15px;
+   background:black;
+}
+.trendingitem{
+    height:64px;
+    width:348px;
+    border:none;
+    background-color:black;
+    display:flex;
+    align-items: center;
+    color:white
+}
+.trendingitemmore{
+    height:30px;
+    width:30px;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-left:230px;
+}
+.trendingitem:hover{
+    background:rgba(255, 255, 255, 0.055);
+    cursor:pointer;
+}
+.showmoretrendingitem{
+    height:51px;
+    width:348px;
+    border:none;
+    background:black;
+    display:flex;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.showmoretrendingitem:hover{
+    background:rgba(255, 255, 255, 0.055);
+    cursor:pointer;
+}
+.showmore{
+    color:rgb(73, 178, 219);
+    text-decoration:none;
+    font-size:15px
+}
+/*to follow suggestion*/
+.tofollow{
+    width:350px;
+    height:300px;
+   border:1px white solid;
+   box-sizing: border-box;
+   margin-top:16px;
+   border-radius:15px;
+   flex-direction: column;
+   background:black
+}
+.tofollowperson{
+    height:60px;
+    width:348px;
+    border:none;
+    background:black;
+    display:flex;
+    align-items: center;
+    
+}
+.tofollowperson:hover{
+    background:rgba(255, 255, 255, 0.055);
+    cursor:pointer;
+}
+.followbtntext{
+    margin-left:10px
+}
+.followsign{
+    height:33px;
+    width:78px;
+    border-radius:16.5px;
+    border:none;
+    background:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    margin-left:170px
+}
+.showmoretofollowbtn{
+    height:55px;
+    width:348px;
+    border:none;
+    background:black;
+    display:flex;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;    
+}
+.showmoretofollowbtn:hover{
+    background:rgba(255, 255, 255, 0.055);
+    cursor:pointer; 
+}
+/*footer*/
+footer{
+    width:350px;
+    height:100px;
+   box-sizing: border-box;
+   margin-top:16px;
+   color:rgb(82, 82, 82);
+   display:flex;
+   font-size:15px;
+   padding-left:10px
+}
+.footerlink{
+    margin:5px;
+    text-decoration: none;
+    color:rgb(82, 82, 82);
+}
+.footerlink:hover{
+    text-decoration:underline
+}
+
